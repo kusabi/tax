@@ -1,0 +1,41 @@
+{
+    "name": "kusabi/tax",
+    "description": "A library for calculating tax in PHP",
+    "type": "library",
+    "license": "mit",
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Christian Harvey",
+            "email": "kusabi.software@gmail.com"
+        }
+    ],
+    "keywords": [
+        "php",
+        "tax"
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^3.4",
+        "phpunit/phpunit": "^5.7",
+        "squizlabs/php_codesniffer": "^3.5",
+        "phpbench/phpbench": "^0.13.0"
+    },
+    "autoload": {
+        "files": [
+            "src/tax.php"
+        ],
+        "psr-4": {
+            "Kusabi\\Tax\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kusabi\\Tax\\Benchmarks\\": "benchmarks/",
+            "Kusabi\\Tax\\Tests\\": "tests/"
+        }
+    }
+}
