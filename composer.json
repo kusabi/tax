@@ -28,10 +28,7 @@
     "autoload": {
         "files": [
             "src/tax.php"
-        ],
-        "psr-4": {
-            "Kusabi\\Tax\\": "src/"
-        }
+        ]
     },
     "autoload-dev": {
         "psr-4": {
