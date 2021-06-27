@@ -17,3 +17,9 @@ If you are interested in the benchmarks, or wish to improve them, you can run;
 vendor/bin/phpbench run  --report=quick
 vendor/bin/phpbench run  --report=quick --output=markdown
 ```
+
+If you wish to focus on a particular benchmark, maybe even given it more iterations for higher accuracy, you can use;
+
+```bash
+vendor/bin/phpbench run --report=quick --filter=benchNetFromTax --iterations=50 --revs=50000
+```

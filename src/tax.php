@@ -44,7 +44,10 @@ if (!function_exists('net_from_gross')) {
      */
     function net_from_gross($gross, $rate = .2)
     {
-        return $gross - tax_from_gross($gross, $rate);
+        if ($rate == 0) {
+            return $gross;
+        }
+        return $gross - $gross / (1 + (1 / $rate));
     }
 }
 
@@ -77,7 +80,14 @@ if (!function_exists('rate_from_gross_and_tax')) {
      */
     function rate_from_gross_and_tax($gross, $tax)
     {
-        return rate_from_net_and_tax($gross - $tax, $tax);
+        $net = $gross - $tax;
+        if ($net == 0 && $tax != 0) {
+            return INF;
+        }
+        if ($net == 0 || $tax == 0) {
+            return 0.0;
+        }
+        return 1 / ($net / $tax);
     }
 }
 
@@ -92,7 +102,14 @@ if (!function_exists('rate_from_net_and_gross')) {
      */
     function rate_from_net_and_gross($net, $gross)
     {
-        return rate_from_net_and_tax($net, $gross - $net);
+        $tax = $gross - $net;
+        if ($net == 0 && $tax != 0) {
+            return INF;
+        }
+        if ($net == 0 || $tax == 0) {
+            return 0.0;
+        }
+        return 1 / ($net / $tax);
     }
 }
 

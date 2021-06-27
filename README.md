@@ -36,19 +36,19 @@ Or simply add it to your `composer.json` file
 
 ## PHPBench Benchmark Results
 
-Below are the latest benchmark results taken on my local machine for PHP 5.4 at 2021-06-27 12:48:32
+Below are the latest benchmark results taken on my local machine for PHP 5.4.
 
 benchmark | subject | mean | diff
  --- | --- | --- | --- 
-TaxBench | benchTaxFromNet | 1.013μs | 0.00%
-TaxBench | benchGrossFromNet | 1.034μs | +2.11%
-TaxBench | benchNetFromTax | 1.064μs | +5.05%
-TaxBench | benchTaxFromGross | 1.072μs | +5.88%
-TaxBench | benchGrossFromTax | 1.077μs | +6.36%
-TaxBench | benchRateFromNetAndTax | 1.216μs | +20.07%
-TaxBench | benchNetFromGross | 1.547μs | +52.73%
-TaxBench | benchRateFromNetAndGross | 1.686μs | +66.53%
-TaxBench | benchRateFromGrossAndTax | 1.721μs | +70.00%
+TaxBench | benchTaxFromNet | 1.026μs | 0.00%
+TaxBench | benchGrossFromNet | 1.053μs | +2.58%
+TaxBench | benchNetFromTax | 1.084μs | +5.57%
+TaxBench | benchGrossFromTax | 1.086μs | +5.77%
+TaxBench | benchTaxFromGross | 1.091μs | +6.29%
+TaxBench | benchNetFromGross | 1.098μs | +6.94%
+TaxBench | benchRateFromNetAndTax | 1.228μs | +19.64%
+TaxBench | benchRateFromGrossAndTax | 1.275μs | +24.25%
+TaxBench | benchRateFromNetAndGross | 1.279μs | +24.60%
 
 
 ## Functions
