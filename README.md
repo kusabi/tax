@@ -34,6 +34,23 @@ Or simply add it to your `composer.json` file
 }
 ```
 
+## PHPBench Benchmark Results
+
+Below are the latest benchmark results taken on my local machine for PHP 5.4 at 2021-06-27 12:48:32
+
+benchmark | subject | mean | diff
+ --- | --- | --- | --- 
+TaxBench | benchNetFromTax | 1.073μs | 0.00%
+TaxBench | benchGrossFromTax | 1.079μs | +0.55%
+TaxBench | benchTaxFromGross | 1.099μs | +2.42%
+TaxBench | benchTaxFromNet | 1.114μs | +3.82%
+TaxBench | benchRateFromNetAndTax | 1.243μs | +15.83%
+TaxBench | benchGrossFromNet | 1.539μs | +43.44%
+TaxBench | benchNetFromGross | 1.590μs | +48.15%
+TaxBench | benchRateFromNetAndGross | 1.808μs | +68.46%
+TaxBench | benchRateFromGrossAndTax | 1.904μs | +77.44%
+
+
 ## Functions
 
 This library adds a number of functions to calculate tax.

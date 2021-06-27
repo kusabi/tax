@@ -11,8 +11,7 @@
                 "benchmark",
                 "subject",
                 "mean",
-                "diff",
-                "mem_peak"
+                "diff"
             ],
             "sort": {
                 "mean": "asc"

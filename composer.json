@@ -19,10 +19,11 @@
         "php": ">=5.4"
     },
     "require-dev": {
-        "symfony/var-dumper": "^3.4",
-        "phpunit/phpunit": "^5.7",
-        "squizlabs/php_codesniffer": "^3.5",
-        "phpbench/phpbench": "^0.13.0"
+        "friendsofphp/php-cs-fixer": "*",
+        "nesbot/carbon": "*",
+        "phpunit/phpunit": "*",
+        "symfony/var-dumper": "*",
+        "phpbench/phpbench": "*"
     },
     "autoload": {
         "files": [
