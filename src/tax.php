@@ -27,7 +27,7 @@ if (!function_exists('gross_from_tax')) {
     function gross_from_tax($tax, $rate = .2)
     {
         if ($rate == 0) {
-            return $tax;
+            return INF;
         }
         return $tax * (1.0 + (1.0 / $rate));
     }

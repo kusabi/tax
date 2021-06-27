@@ -18,7 +18,7 @@ class TaxTest extends TestCase
     {
         $this->assertEquals(120.0, gross_from_tax(20.0, 0.2));
         $this->assertEquals(200.0, gross_from_tax(100.0, 1.0));
-        $this->assertEquals(0.0, gross_from_tax(0.0, 0.0));
+        $this->assertEquals(INF, gross_from_tax(0.0, 0.0));
         $this->assertEquals(1100.0, gross_from_tax(1000.0, 10.0));
     }
 
