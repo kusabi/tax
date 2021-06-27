@@ -11,7 +11,7 @@ if (!function_exists('gross_from_net')) {
      */
     function gross_from_net($net, $rate = .2)
     {
-        return $net + tax_from_net($net, $rate);
+        return $net + $net * $rate;
     }
 }
 

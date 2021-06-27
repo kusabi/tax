@@ -40,15 +40,15 @@ Below are the latest benchmark results taken on my local machine for PHP 5.4 at 
 
 benchmark | subject | mean | diff
  --- | --- | --- | --- 
-TaxBench | benchNetFromTax | 1.073μs | 0.00%
-TaxBench | benchGrossFromTax | 1.079μs | +0.55%
-TaxBench | benchTaxFromGross | 1.099μs | +2.42%
-TaxBench | benchTaxFromNet | 1.114μs | +3.82%
-TaxBench | benchRateFromNetAndTax | 1.243μs | +15.83%
-TaxBench | benchGrossFromNet | 1.539μs | +43.44%
-TaxBench | benchNetFromGross | 1.590μs | +48.15%
-TaxBench | benchRateFromNetAndGross | 1.808μs | +68.46%
-TaxBench | benchRateFromGrossAndTax | 1.904μs | +77.44%
+TaxBench | benchTaxFromNet | 1.013μs | 0.00%
+TaxBench | benchGrossFromNet | 1.034μs | +2.11%
+TaxBench | benchNetFromTax | 1.064μs | +5.05%
+TaxBench | benchTaxFromGross | 1.072μs | +5.88%
+TaxBench | benchGrossFromTax | 1.077μs | +6.36%
+TaxBench | benchRateFromNetAndTax | 1.216μs | +20.07%
+TaxBench | benchNetFromGross | 1.547μs | +52.73%
+TaxBench | benchRateFromNetAndGross | 1.686μs | +66.53%
+TaxBench | benchRateFromGrossAndTax | 1.721μs | +70.00%
 
 
 ## Functions
